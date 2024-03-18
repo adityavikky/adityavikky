@@ -27,13 +27,8 @@ export default function GetData() {
   const lastPostIndex = currentPage * postPerPage;
   const firstPostIndex = lastPostIndex - postPerPage;
   const currentPosts = data.slice(firstPostIndex, lastPostIndex);
-  // console.log(currentPosts)
-  // let totalData = Object.keys(data).length;
-  // console.log(totalData);
 
-  // console.log(data.length)
   const totalData = data.length;
-  // console.log(totalData);
 
   return (
     <div className="max-w-screen-xl mx-auto p-5 sm:p-10 md:p-16">
@@ -48,8 +43,7 @@ export default function GetData() {
                 url={data.html_url}
                 published={data.published_at}
               />
-              {/* {console.log( Object.keys( data ).length )} */}
-              {/* {console.log(data.length)} */}
+              
             </div>
           );
         })}

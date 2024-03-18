@@ -2,7 +2,6 @@ import React from "react";
 
 const PaginationComponent = ({
   getData,
-  totalPosts,
   postPerPage,
   setCurrentPage,
 }) => {
@@ -16,7 +15,6 @@ const PaginationComponent = ({
     <div className="mt-4 p-4">
       <nav aria-label="Pagination" className="flex justify-center items-center">
         <ul class="inline-flex -space-x-px text-base h-10">
-          {/* Map data */}
           {pages.map((page) => (
             <li>
               <button
